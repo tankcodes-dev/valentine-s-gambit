@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Sparkles } from "lucide-react";
+import { Heart } from "lucide-react";
 
 const RejectScreen = () => {
   return (
@@ -16,7 +16,7 @@ const RejectScreen = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
       >
-        <Sparkles className="w-10 h-10 text-valentine-gold" />
+        <Heart className="w-10 h-10 text-valentine-rose/60" />
       </motion.div>
 
       <motion.h1
@@ -25,16 +25,36 @@ const RejectScreen = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
       >
-        Thank you for being honest.
+        I understand, and I respect that.
       </motion.h1>
       
       <motion.p
-        className="valentine-subtitle text-xl mt-6"
+        className="valentine-subtitle text-lg mt-6 leading-relaxed"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4 }}
       >
-        You're still amazing — truly. ✨
+        Some feelings are worth expressing, even if the answer isn't what we hoped for.
+      </motion.p>
+
+      <motion.p
+        className="text-valentine-text/80 text-base mt-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.6 }}
+      >
+        Thank you for being honest with me. 
+        <br />
+        You deserve someone who makes your heart say yes without hesitation.
+      </motion.p>
+
+      <motion.p
+        className="text-valentine-rose mt-6 text-lg font-medium"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.8 }}
+      >
+        Wishing you all the love in the world. 💕
       </motion.p>
     </motion.div>
   );
